@@ -7,7 +7,6 @@ The API provides endpoints for user authentication and CRUD features for user pr
 - [Features](#features)
 - [Installation](#installation)
 - [API Documentation](#api-documentation)
-- [License](#license)
 
 ## Features
 
@@ -60,7 +59,3 @@ To add user with admin role, prisma studio can be used by running
 ```sh
 npx prisma studio
 ```
-
-## License
-
-The API is licensed under the [MIT License](https://opensource.org/license/mit/).
