@@ -6,7 +6,7 @@ The API provides endpoints for user authentication and CRUD features for user pr
 
 - [Features](#features)
 - [Installation](#installation)
-- [API Documentation](#api-documentation)
+
 
 ## Features
 
