@@ -14,7 +14,8 @@ const createUser = {
 
 const getUsers = {
   query: Joi.object().keys({
-    name: Joi.string(),
+    fn: Joi.string(),
+    ln: Joi.string(),
     role: Joi.string(),
     sortBy: Joi.string(),
     limit: Joi.number().integer(),
@@ -36,12 +37,12 @@ const updateUser = {
     .keys({
       fn: Joi.string(),
       ln: Joi.string(),
-      documentID: Joi.string(),
+      p: Joi.string(),
+      s: Joi.string(),
+      b: Joi.string(),
       gender: Joi.string(),
-      nationality: Joi.string(),
-      marital_status: Joi.string(),
-      dob: Joi.string(),
-      profilePhoto: Joi.any()
+      study_field: Joi.string(),
+      location: Joi.string(),
     })
     .min(1)
 };

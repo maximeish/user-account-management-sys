@@ -15,7 +15,6 @@
     "prettier": "prettier --check **/*.ts",
     "prettier:fix": "prettier --write **/*.ts",
     "db:push": "prisma db push",
-    "prepare": "husky install",
     "rimraf": "./node_modules/rimraf/bin.js",
     "build": "rimraf build && tsc -p tsconfig.json  && npm run db:push && npm run db:seed "
   },

@@ -15,15 +15,13 @@ model User {
   email           String   @unique
   fn              String?
   ln              String?
-  verificationStatus VerificationStatus?  @default(Unverified)
   password        String
-  documentID      String?
-  documentPhoto   String?
+  p               String?
+  s               String?  
+  b               String?
   gender          Gender?
-  nationality     String?
-  marital_status  MaritalStatus?
-  dob             String?
-  profilePhoto    String?
+  study_field     String?
+  location        String?
   role            Role     @default(USER)
   isEmailVerified Boolean  @default(false)
   createdAt       DateTime @default(now())
@@ -47,13 +45,6 @@ enum Role {
   ADMIN
 }
 
-enum MaritalStatus {
-  Single
-  Married
-  Divorced
-  Widowed
-}
-
 
 enum Gender {
   M
@@ -65,10 +56,4 @@ enum TokenType {
   REFRESH
   RESET_PASSWORD
   VERIFY_EMAIL
-}
-
-enum VerificationStatus {
-  Unverified
-  Pending
-  Verified
 }

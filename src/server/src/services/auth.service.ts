@@ -28,6 +28,7 @@ const loginUserWithEmailAndPassword = async (
     'b',
     'location',
     'study_field',
+    'isEmailVerified',
     'gender',
     'password',
     'role',

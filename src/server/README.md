@@ -37,7 +37,6 @@ Postgres should be installed, and run the following commands:
 
 ```sh
 npm install
-npm run prepare
 ```
 
 Before running the next commands, postgresql service needs to be started
