@@ -115,7 +115,18 @@ export default function Profile() {
           },
         }
       )
-      .then()
+      .then(r => {
+        toast.success("Update successful", {
+        position: "top-right",
+        autoClose: 3000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: false,
+        progress: undefined,
+        theme: "light",
+      });
+      })
       .catch();
 
     console.log({ ...updatedFields, id: userData.user.id });
